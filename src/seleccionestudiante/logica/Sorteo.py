@@ -55,7 +55,7 @@ class Sorteo():
                         session.query ( Asignatura ).filter (
                             Asignatura.nombreAsignatura.ilike ( '%{0}%'.format ( nombreAsignatura ) ) ).all ( ) ]
         return asignaturas
-
+#estudiante - Final
     def agregar_estudiante(self, apellidoPaterno, apellidoMaterno, nombres, elegible):
         if (apellidoPaterno == ""):
             return False
